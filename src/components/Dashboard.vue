@@ -1,6 +1,10 @@
 <template>
   <div>
     <h1>{{title}}</h1>
+    <div v-if="showTickets" style="border:red thin solid">
+        <h2>Tickets</h2>
+
+    </div>
   </div>
 </template>
 
@@ -9,7 +13,8 @@ export default {
   name: 'Dashboard',
   data () {
     return {
-      title: "Dashboard"
+      title: "Dashboard",
+      showTickets:true
     }
   },
 }
