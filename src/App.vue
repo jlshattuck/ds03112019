@@ -1,6 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Welcome to Your Vue.js App</h1>
+    <Dashboard />
   </div>
 </template>
+
+<script>
+import Dashboard from './components/Dashboard.vue'
+export default {
+  components: { Dashboard }
+}
+</script>
+
